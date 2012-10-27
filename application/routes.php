@@ -37,7 +37,7 @@ Route::get('todos','todo@index');
 Route::post('todos','todo@create');
 Route::put('todos/(:any)','todo@edit');
 Route::delete('todos/(:any)','todo@remove');
-Route::get('api/methods','todo@allowedMethods');
+Route::get('todos/methods','todo@allowedMethods');
 
 /*
 |--------------------------------------------------------------------------
