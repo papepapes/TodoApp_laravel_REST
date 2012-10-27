@@ -1,22 +1,16 @@
 # [Laravel](http://laravel.com) - A PHP Framework For Web Artisans
 
-Laravel is a clean and classy framework for PHP web development. Freeing you
-from spaghetti code, Laravel helps you create wonderful applications using
-simple, expressive syntax. Development should be a creative experience that you
-enjoy, not something that is painful. Enjoy the fresh air.
-
-[Official Website & Documentation](http://laravel.com)
+TodoApp for Laravel is a simple implementation of a todo REST service using amazing PHP framework Laravel (http://laravel.com).
+[Official Website & Documentation for Laravel](http://laravel.com)
 
 ## Feature Overview
 
-- Simple routing using Closures or controllers.
-- Views and templating.
-- Driver based session and cache handling.
-- Database abstraction with query builder.
-- Authentication.
-- Migrations.
-- PHPUnit Integration.
-- A lot more.
+- Create a todo resource with HTTP POST method
+- Update a todo resource with HTTP PUT method
+- List todo resources with HTTP GET method
+- Get a todo resource with HTTP GET method
+- Delete a todo resource with HTTP DELETE method
+- GET supported methods with HTTP GET method (see below for more on this one)
 
 ## A Few Examples
 
@@ -52,16 +46,7 @@ Route::get('user/(:num)', function($id)
 return Redirect::to('profile')->with('message', 'Welcome Back!');
 ```
 
-## Contributing to Laravel
-
-Contributions are encouraged and welcome; however, please review the Developer
-Certificate of Origin in the "license.txt" file included in the repository. All
-commits must be signed off using the `-s` switch.
-
 ```bash
 git commit -s -m "this commit will be signed off automatically!"
 ```
 
-## License
-
-Laravel is open-sourced software licensed under the MIT License.
