@@ -126,8 +126,8 @@ class Todo_Controller extends Base_Controller {
 		if (Input::get('done'))
 			$todo->done = Input::get('done');
 		$todo->save();
-		Response::status('200');
-		Response::header('Location:', 'todos/' . $todo->id);
+		Response::status('201');
+		Response::header('Location', 'todos/' . $todo->id);
 		Response::send_headers();
 
 	}
@@ -137,6 +137,6 @@ class Todo_Controller extends Base_Controller {
 	 */
 	public function get_allowedMethods() {
 		return Response::make('', '200',
-				array('Allow' => 'GET,PUT,POST,OPTIONS,DELETE'));
+				array('Allow' => 'GET,PUT,POST,DELETE'));
 	}
 }
